@@ -1,0 +1,148 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+    
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+/* footer */
+.nav-link{
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links:hover{
+    text-decoration: underline;
+}
+.f-info-socials{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.f-info-socials i{
+    margin: 1rem;
+}
+.f-info-links{
+    width: 100%;
+}
+
+.f-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    height: 8rem;
+    background-color: #ebebeb;
+    text-align: center;
+    /* align-items: center; */
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+/* card */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+    overflow: hidden !important;
+    
+}
+
+
+.row{
+    justify-content: center; 
+    /* justify-content: space-evenly; */
+}
+
+
+
+.main-img{
+    border-radius: .5rem !important;
+    width: 100% !important;
+    transition: all .4s !important;
+    object-fit: cover !important;
+    
+}
+figure{
+    border-radius: .5rem !important;
+    overflow: hidden;
+
+}
+.main-img:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+
+.cos-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white !important;
+}
+
+
+
+.show-img{
+  height: 40vh !important;
+  width: 95% !important;
+  object-fit: cover;
+  border-radius: .5rem !important;
+}
+
+.div-show-img{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body{
+    padding: 1rem !important;
+}
+
+.edit-del-btn{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center ; */
+    
+}
+.show-del-edit-btn{
+    margin-right: 1rem;
+}
+
+
+.login-signup{
+    display: flex;
+    justify-content: space-between;
+}
+
+#map {
+    height: 100px;
+    width: 100px;
+}
+
+

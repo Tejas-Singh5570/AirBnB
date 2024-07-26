@@ -1,0 +1,58 @@
+<% layout("/layouts/boilerplate") %>
+
+
+  <body>
+    <div class="row">
+      <div class="col-8">
+   
+        <h3>Edit your Listing</h3>
+        <form method="POST" action="/listing/<%= listing._id %>?_method=PUT" novalidate class = "needs-validation">
+
+          <div>
+            <label for="title" class="form-lable">Title</label>
+            <input class="form-control" name="listing[title]" value="<%= listing.title %>" type="text" required />
+          </div>
+          <br /><br />
+
+          <div>
+            <label for="description" class="form-lable">Discription</label>
+            <textarea class="form-control" name="listing[description]" required><%= listing.description %></textarea>
+          </div>
+          <br /><br />
+
+          <div class="mb-3" >
+            <p>Original Image</p>
+            <img style="height: 10rem;" src="<%= listing.image %>" alt="">
+          </div>
+          <div>
+            <label for="image" class="form-lable" required>Image url</label>
+            <input class="form-control" name="listing[image]" value="<%= listing.image %>" type="text" />
+          </div>
+          <br /><br />
+
+          <div class="row">
+            <div class="mb-3 col-md-4">
+              <label for="number" class="form-lable">Price</label>
+              <input class="form-control" required name="listing[price]"  value="<%= listing.price %>" type="number" />
+            </div>
+
+            <br /><br />
+
+            <div class="mb-3 col-md-8">
+              <label for="country" class="form-lable">Location</label>
+              <input required class="form-control" name="listing[country]" value="<%= listing.country %>" type="text" />
+            </div>
+            <br /><br />
+          </div>
+
+          <div>
+            <label for="country" class="form-lable">Country</label>
+            <input required class="form-control" name="listing[location]" value="<%= listing.location %>" type="text" />
+          </div>
+          <br /><br />
+
+          <button class="btn cos-btn">Edit</button>
+        </form>
+      </div>
+    </div>
+  </body>
