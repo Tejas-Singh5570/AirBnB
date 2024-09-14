@@ -20,6 +20,7 @@ require("dotenv").config();
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl = process.env.ATLASDB_URL;
+const PORT = process.env.PORT || 8080;
 
 main()
   .then(() => {
@@ -315,6 +316,6 @@ app.use((err,req, res, next) => {
 });
 
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log("server is listening to port 8080");
 });
