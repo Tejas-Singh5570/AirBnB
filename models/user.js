@@ -8,8 +8,9 @@ userSchema = new mongoose.Schema({
         type: String,
         required: true,
 
-    }
+    },
     // it also contains username and passward key by default
+   
 });
 
 userSchema.plugin(passportLoacalMongoose);

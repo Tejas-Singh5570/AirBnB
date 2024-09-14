@@ -274,6 +274,15 @@ app.post("/login", passport.authenticate("local", {failureRedirect: "/login", fa
   res.redirect("/listing");
 });
 
+app.get("/admin" , (req, res) => {
+  res.render("users/admin.ejs");
+});
+
+app.post("/admin",passport.authenticate("local", {failureRedirect: "/login", failureFlash: true}), (req, res) => {
+  req.flash( "success", `Welcome ${req.user.username} to wanderlust`);
+  res.redirect("/listing");
+} )
+
 
 // logout route
 app.get("/logout" , (req, res, next) => {
